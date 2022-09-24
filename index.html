@@ -8,6 +8,69 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/index.js"></script>
+  <main>
+    <div class="contenedorCartaPrincipal">
+      
+      <div class = "cartaPrincipal">
+          
+        <h1>Generador de Contraseñas</h1>
+
+        <section class="contenedorPrimeraSeccion">
+
+          <div class="contenedorClave">
+
+              <span id="copiarClave">adsjadkjasdj</span>
+              <button id="btncopy"><i class="fa-solid fa-copy"></i></button>
+              <button id="btn"><i class="fa-solid fa-retweet"></i></button>
+
+          </div> 
+          
+          <div class="contenedorLongitud">
+            
+                <label for="inputLongitud" class="inputLongitud">Longitud deseada</label>
+                <input  
+                type="number" 
+                id="longitudIngresada" 
+                class="longitudIngresada" 
+                min="6" 
+                max="20"/>
+
+          </div>
+        
+        </section>
+          
+        <section class="contenedorSegundaSeccion">
+          
+          <div class="contenedorOpciones">
+
+                   <p>Caracteres deseados</p>
+                  
+                  <label for = "mayuscula">Mayuscula</label>
+                  <input type="checkbox" id= "mayuscula"/>
+
+                  <label for = "minuscula">Minuscula</label>
+                  <input type="checkbox" id= "minuscula"/>
+                  
+                  <label for = "numeros">Numeros</label>
+                  <input type="checkbox" id= "numeros"/>
+                  
+                  <label for = "simbolos">Simbolos</label>
+                  <input type="checkbox"  id= "simbolos"/>
+
+                  <p>Reglas para la contraseña</p>
+            
+                  <label class="soloLetras" for="soloLetras"> Solo letras</label>
+                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras" >
+                
+                  <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
+                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros" > 
+                
+                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
+                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"> 
+          </div>      
+      </div>
+    </div>
+</main>
+  <script src="js/index.js"></script>
 </body>
 </html>
