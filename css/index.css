@@ -1,0 +1,94 @@
+body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: unset;
+    font-family: "Source Sans Pro", sans-serif;
+    background-image:url(https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg);
+
+}
+
+.contenedorCartaPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaPrincipal{
+    height: 40%;
+    width: 40%;
+    background-color:#37404b4f;
+    border-radius: 15px;
+  
+}
+
+.contenedorClave{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.contenedorLongitud{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size:30px;
+}
+
+.inputLongitud{
+    font-size: 40px;
+    margin-right: 35px;
+}
+
+.longitudIngresada{
+    background-color: #bbdefb;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    border-color: #b3e5fc;
+}
+
+.contenedorOpciones{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1{
+    color: #bdbdbd;
+    text-align: center;
+    font-size: 50px;    
+}
+
+p{
+    font-size: 30px;
+    font-weight: lighter;
+    color:#bdbdbd;
+}
+
+label{
+    font-size: 25px;
+    font-weight: lighter;
+    color: #bdbdbd;
+}
+
+button, span {
+  color: #6c7074;
+  font-size: 25px;
+  background-color: #bbdefb;
+  border-radius: 25px;
+  height: 50px;
+  width: 150px;
+  border-color: #b3e5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+span{
+    height: 50px;
+    width: 300px;
+
+}   
