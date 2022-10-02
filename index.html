@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <link rel="icon" type="image/jpg" href="/IMAGENES/favicon.jpg">
+    <title>Generador de Contraseñas</title>
 </head>
 <body>
   <main>
@@ -33,6 +34,7 @@
                 type="number" 
                 id="longitudIngresada" 
                 class="longitudIngresada" 
+                value ="10"
                 min="6" 
                 max="20"/>
 
@@ -44,7 +46,18 @@
           
           <div class="contenedorOpciones">
 
-                   <p>Caracteres deseados</p>
+            <p>Reglas para la contraseña</p>
+            
+                  <label class="soloLetras" for="soloLetras"> Solo letras</label>
+                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras" >
+                
+                  <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
+                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros" > 
+                
+                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
+                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"> 
+
+            <p>Caracteres deseados</p>
                   
                   <label for = "mayuscula">Mayuscula</label>
                   <input type="checkbox" id= "mayuscula"/>
@@ -57,19 +70,10 @@
                   
                   <label for = "simbolos">Simbolos</label>
                   <input type="checkbox"  id= "simbolos"/>
-
-                  <p>Reglas para la contraseña</p>
-            
-                  <label class="soloLetras" for="soloLetras"> Solo letras</label>
-                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras" >
-                
-                  <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
-                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros" > 
-                
-                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
-                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"> 
           </div> 
         </section>       
+
+        <footer> <p class="footer">Hecho con amor por Lucia</p></footer>
       </div>
     </div>
 </main>

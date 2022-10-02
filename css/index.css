@@ -19,23 +19,30 @@ body{
     width: 50%;
     background-color:#37404b4f;
     border-radius: 15px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contenedorClave{
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
 }
 
 .contenedorLongitud{
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    flex-wrap: wrap;  
 }
 
 .inputLongitud{
     font-size:30px;
     margin-right: 35px;
+    text-align: center;
 }
 
 .longitudIngresada{
@@ -51,7 +58,7 @@ body{
 h1{
     color: #bdbdbd;
     text-align: center;
-    font-size: 50px;    
+    font-size: 250%;    
 }
 
 p{
@@ -71,8 +78,8 @@ button, span {
   font-size: 25px;
   background-color: #bbdefb;
   border-radius: 25px;
-  height: 50px;
-  width: 150px;
+  height: 50%;
+  width: 100%;
   border-color: #b3e5fc;
   display: flex;
   justify-content: center;
@@ -80,9 +87,35 @@ button, span {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.footer{
+    font-size: smaller;
+}
 
-span{
-    height: 50px;
-    width: 300px;
-
-}   
+@media (max-width: 480px) {
+    .contenedorCartaPrincipal {
+      display: flex;
+      flex-direction: column;
+       
+    }
+  }
+  @media  (min-width: 481px) and (max-width: 900px) {
+    .contenedorCartaPrincipal {
+      display: flex;
+      flex-direction: column;
+       
+    }
+  }
+  
+     @media (max-width: 480px) {
+        .contenedorOpciones {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    @media  (min-width: 481px) and (max-width: 900px) {
+        .contenedorOpciones {
+        display: flex;
+        flex-direction: column;
+        
+        }
+    }   
