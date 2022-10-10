@@ -11,6 +11,7 @@
 </head>
 <body>
   <main>
+
     <div class="contenedorCartaPrincipal">
       
       <div class = "cartaPrincipal">
@@ -22,22 +23,28 @@
           <div class="contenedorClave">
 
               <span id="copiarClave">adsjadkjasdj</span>
-              <button id="btncopy"><i class="fa-solid fa-copy"></i></button>
+
+            <div class="contenedorBotones">
+              <button id="botoncopiar"><i class="fa-solid fa-copy"></i></button>
               <button id="btn"><i class="fa-solid fa-retweet"></i></button>
+            </div>
 
           </div> 
           
           <div class="contenedorLongitud">
             
                 <label for="inputLongitud" class="inputLongitud">Longitud deseada</label>
+                
                 <input  
-                type="number" 
+                type="range" 
                 id="longitudIngresada" 
                 class="longitudIngresada" 
-                value ="10"
                 min="6" 
-                max="20"/>
+                max="20"
+                step="1"
+                onchange="rango(this.value)"/>
 
+                <h2> Longitud de la contraseña:<span id="longitudRecibida">12</span></h2>
           </div>
         
         </section>
@@ -46,18 +53,18 @@
           
           <div class="contenedorOpciones">
 
-            <p>Reglas para la contraseña</p>
-            
+            <h2>Reglas para la contraseña</h2>
+                  
+                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
+                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"/> 
+
                   <label class="soloLetras" for="soloLetras"> Solo letras</label>
-                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras" >
+                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras"/>
                 
                   <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
-                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros" > 
+                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros"/> 
                 
-                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
-                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"> 
-
-            <p>Caracteres deseados</p>
+            <h2>Caracteres deseados</h2>
                   
                   <label for = "mayuscula">Mayuscula</label>
                   <input type="checkbox" id= "mayuscula"/>
@@ -77,6 +84,6 @@
       </div>
     </div>
 </main>
-  <script src="js/index.js"></script>
+  <script src="js/index.js"></script> 
 </body>
 </html>
