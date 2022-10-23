@@ -1,7 +1,7 @@
 body{
     max-width: 100% !important;
     overflow-x: hidden !important;
-    margin: unset;
+    margin: 0;
     font-family: "Source Sans Pro", sans-serif;
     background-image:url(https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg);
 
@@ -91,6 +91,29 @@ button{
 button:hover{
     background-color: #37404b4f;
 }
+.contenedorGeneraryResetear {
+    color: #6c7074;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #75c0fd;
+    border-radius: 10px;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+  .btnresetear{
+    color: #6c7074;
+    margin-left: 5px;
+  }
+  btnresetear:hover{
+    background-color: #37404b4f;
+}
+
 
 .longitud {
     color: #6c7074;
@@ -105,9 +128,6 @@ button:hover{
     align-items: center;
     margin-bottom: 10px;
   }
-.footer{
-    font-size: smaller;
-}
 /* Media query para mobile */
 
 @media (max-width: 480px) {
