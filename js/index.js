@@ -18,6 +18,7 @@ const $todosCaracteres = $("#todosCaracteres")
 const $copiarClave = $("#copiarClave")
 const $botoncopiar = $("#botoncopiar")
 const $btn = $("#btn");
+const $btnGenerar = $("#btnGenerar")
 
 //Selectores de longitud
 
@@ -36,12 +37,14 @@ const mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // alert("Debes seleccionar una regla o un caracter") 
 
 const generadorPosibleContraseña = () => {
-  
-  const largoRequerido = parseInt($("#longitudIngresada").value);
 
   const contraseña = [];
 
+  const largoRequerido = parseInt($("#longitudIngresada").value);
+
+
   while (largoRequerido > contraseña.length) {
+
 
     if (largoRequerido > contraseña.length && $soloLetras.checked) {
       const num = Math.floor(Math.random() * minus.length);
@@ -97,8 +100,20 @@ $botoncopiar.addEventListener("click", () => {
     navigator.clipboard.writeText(textToCopy)
 })
 
+const sinOpcion = () =>{
 
-$btn.addEventListener("click", generadorPosibleContraseña);
+  if(!$mayuscula.checked && !$minuscula.checked && 
+    !$simbolos.checked &&  !$numeros.checked);{
+    return alert ("Debe seleccionar al menos una opcion")
+    } 
+  }
+
+$btnGenerar.addEventListener("click", sinOpcion);
+
+
+$btnGenerar.addEventListener("click", generadorPosibleContraseña);
+
+
 
 
 function rango (value){
@@ -108,11 +123,8 @@ function rango (value){
 //Eventos para checked y disabled, figuran en gris
 
 $soloNumeros.addEventListener("click", () => {
-  $mayuscula.disabled = true; 
   $mayuscula.checked = false;
-  $minuscula.disabled = true; 
   $minuscula.checked = false;
-  $simbolos.disabled = true; 
   $simbolos.checked = false;
   $numeros.checked = true;  
 })
@@ -120,10 +132,8 @@ $soloNumeros.addEventListener("click", () => {
 $soloLetras.addEventListener("click", () => {
   $mayuscula.checked = true; 
   $minuscula.checked = true; 
-  $simbolos.disabled = true; 
   $simbolos.checked = false; 
-  $numeros.disabled = true;
-  $numeros.checked = false;
+  $numeros.checked = false; 
 })
 
 $todosCaracteres.addEventListener("click", () => {
@@ -131,9 +141,5 @@ $todosCaracteres.addEventListener("click", () => {
   $minuscula.checked = true; 
   $simbolos.checked = true; 
   $numeros.checked = true;
-  $mayuscula.disabled = true;
-  $minuscula.disabled = true; 
-  $simbolos.disabled = true; 
-  $numeros.disabled = true; 
 })
 
