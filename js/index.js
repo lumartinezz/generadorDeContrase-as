@@ -39,19 +39,20 @@ const generadorPosibleContraseña = () => {
   
   const largoRequerido = parseInt($("#longitudIngresada").value);
 
-  let contraseña = [];
+  const contraseña = [];
 
   while (largoRequerido > contraseña.length) {
 
     if (largoRequerido > contraseña.length && $soloLetras.checked) {
       const num = Math.floor(Math.random() * minus.length);
       const num1 = Math.floor(Math.random() * mayus.length);
-      contraseña += minus[num] + mayus[num1];
+      contraseña.push(minus[num]);
+      contraseña.push(minus[num1]);
     }
 
     if (largoRequerido > contraseña.length && $soloNumeros.checked) {
       const num = Math.floor(Math.random() * nums.length);
-      contraseña += nums[num];
+      contraseña.push(nums[num]);
     }
 
     if (largoRequerido > contraseña.length && $todosCaracteres.checked) {
@@ -59,31 +60,34 @@ const generadorPosibleContraseña = () => {
       const num1 = Math.floor(Math.random() * mayus.length);
       const num2 = Math.floor(Math.random() * nums.length);
       const num3 = Math.floor(Math.random() * simb.length);
-      contraseña += minus[num] + mayus[num1] + nums[num2] + simb[num3];
+      contraseña.push(minus[num]);
+      contraseña.push(mayus[num1]);
+      contraseña.push(nums[num2]);
+      contraseña.push(simb[num3]);
     }
 
     if (largoRequerido > contraseña.length && $mayuscula.checked) {
       const num = Math.floor(Math.random() * mayus.length);
-      contraseña += mayus[num];
+      contraseña.push(mayus[num]);
     }
 
     if (largoRequerido > contraseña.length && $minuscula.checked) {
       const num = Math.floor(Math.random() * minus.length);
-      contraseña += minus[num];
+      contraseña.push(minus[num]);
     }
 
     if (largoRequerido > contraseña.length && $numeros.checked) {
       const num = Math.floor(Math.random() * nums.length);
-      contraseña += nums[num];
+      contraseña.push(nums[num]);
     }
 
     if (largoRequerido > contraseña.length && $simbolos.checked) {
       const num = Math.floor(Math.random() * simb.length);
-      contraseña += simb[num];
+      contraseña.push(simb[num]);
     }
   }
 
-  $copiarClave.innerText = contraseña
+  $copiarClave.innerText = contraseña.join("");
 };
 
 //eventos para generar contraseña

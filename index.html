@@ -33,7 +33,7 @@
           
           <div class="contenedorLongitud">
             
-                <label for="inputLongitud" class="inputLongitud"></label>
+                <label class="inputLongitud"></label>
                 
                 <h2> Longitud de la contraseña:</h2>
                 
@@ -44,6 +44,7 @@
                 min="6" 
                 max="20"
                 step="1"
+                value="12"
                 onchange="rango(this.value)"/>
                 
                 <span class= "longitud" id="longitudRecibida">12</span>
@@ -57,8 +58,8 @@
 
             <h2>Reglas para la contraseña</h2>
                   
-                  <label class="caracteres" for="caracteres">Todos los caracteres</label>
-                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" value="caracteres"/> 
+                  <label class="caracteres" >Todos los caracteres</label>
+                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" checked="checked"/> 
 
                   <label class="soloLetras" for="soloLetras"> Solo letras</label>
                   <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras"/>
