@@ -1,13 +1,20 @@
 # Bienvenidos a mi generador de contraseñas! 🌸
 
-Es un proyecto en el que llevo trabajando varios meses, en donde van a poder generar sus claves con numeros, mayusculas, minusculas y caracteres!
+Es un proyecto en el que llevo trabajando varios meses como instancia de evaluación en la academia AdaITW; En el mismo van a poder generar sus claves con un rango de longitud, y seleccionando su composicion que puede incluir letras, numeros y caracteres! 
 
-**Van a poder descubrir**
+**Van a descubrir**
 
-- codigo JavaScrip desarrollado desde cero por mi!
+- Codigo JavaScrip desarrollado desde cero por mi!
 - Contiene: bucles, arrays, strings y mucha logica!
-- codigo HTML con radiobuttons y checkbox!!      
-- codigo CSS con estilos y algo de responsive!
+- Codigo HTML con radiobuttons y checkbox!!      
+- Codigo CSS con estilos y algo de responsive!
+
+**Tiene distintas funcionalidades**
+- Generar una contraseña a través de una barra de rango de 06 a 20 caracteres!
+- Copiar la contraseña con un boton!
+- Tiene multiples opciones configuracion para hacer tu contraseña mas segura!
+
+Esta es mi pagina para que la puedan visitar 💜 ! https://lumartinezz.github.io/generadorDeContrase-as/
 
 *Espero que lo disfruten!* 😊
 
