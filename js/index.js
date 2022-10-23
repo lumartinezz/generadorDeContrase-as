@@ -33,7 +33,7 @@ const mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 //Funcion principal
 
-alert("Debes seleccionar una regla o un caracter") 
+// alert("Debes seleccionar una regla o un caracter") 
 
 const generadorPosibleContraseña = () => {
   

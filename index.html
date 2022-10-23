@@ -22,7 +22,7 @@
 
           <div class="contenedorClave">
 
-              <span id="copiarClave">adsjadkjasdj</span>
+              <span class= "longitud" id="copiarClave">Genera tu contraseña!</span>
 
             <div class="contenedorBotones">
               <button id="botoncopiar"><i class="fa-solid fa-copy"></i></button>
@@ -33,7 +33,9 @@
           
           <div class="contenedorLongitud">
             
-                <label for="inputLongitud" class="inputLongitud">Longitud deseada</label>
+                <label for="inputLongitud" class="inputLongitud"></label>
+                
+                <h2> Longitud de la contraseña:</h2>
                 
                 <input  
                 type="range" 
@@ -43,8 +45,8 @@
                 max="20"
                 step="1"
                 onchange="rango(this.value)"/>
-
-                <h2> Longitud de la contraseña:<span id="longitudRecibida">12</span></h2>
+                
+                <span class= "longitud" id="longitudRecibida">12</span>
           </div>
         
         </section>

@@ -52,16 +52,10 @@ body{
     text-align: center;
 }
 
-.longitudIngresada{
-    background-color: #bbdefb;
-    border-radius: 25px;
-    height: 40px;
-    width: 100px;
-    border-color: #b3e5fc;
-}
-
 .contenedorOpciones{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 h1{
     color: #bdbdbd;
@@ -84,7 +78,7 @@ button{
   color: #6c7074;
   font-size: 25px;
   background-color: #bbdefb;
-  border-radius: 25px;
+  border-radius: 10px;
   height: 35px;
   width: 80px;
   border-color: #b3e5fc;
@@ -95,11 +89,15 @@ button{
   margin-bottom: 15px;
 }
 
-span {
+button:hover{
+    background-color: #37404b4f;
+}
+
+.longitud {
     color: #6c7074;
-    font-size: 25px;
-    background-color: #bbdefb;
-    border-radius: 25px;
+    font-size: 20px;
+    background-color: #75c0fd;
+    border-radius: 5px;
     height: 45px;
     width: 250px;
     border-color: #b3e5fc;
@@ -123,6 +121,12 @@ span {
         display: flex;
         flex-direction: column;
         }
+    .cartaPrincipal{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      background: none;
+    }
     }
     h1{
         font-size: 25px;      
