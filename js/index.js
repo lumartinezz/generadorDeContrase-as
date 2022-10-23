@@ -37,9 +37,14 @@ const mayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // alert("Debes seleccionar una regla o un caracter") 
 
 const generadorPosibleContraseña = () => {
-
+ 
+  if(!$mayuscula.checked && !$minuscula.checked && 
+    !$simbolos.checked &&  !$numeros.checked) {
+    return alert("Debe seleccionar al menos una opcion")
+  } 
+    
   const contraseña = [];
-
+ 
   const largoRequerido = parseInt($("#longitudIngresada").value);
 
 
@@ -100,21 +105,9 @@ $botoncopiar.addEventListener("click", () => {
     navigator.clipboard.writeText(textToCopy)
 })
 
-const sinOpcion = () =>{
-
-  if(!$mayuscula.checked && !$minuscula.checked && 
-    !$simbolos.checked &&  !$numeros.checked);{
-    return alert ("Debe seleccionar al menos una opcion")
-    } 
-  }
-
-$btnGenerar.addEventListener("click", sinOpcion);
-
-
 $btnGenerar.addEventListener("click", generadorPosibleContraseña);
 
-
-
+$btn.addEventListener("click", generadorPosibleContraseña);
 
 function rango (value){
   $longitudRecibida.innerText = value;
