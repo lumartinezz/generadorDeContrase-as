@@ -1,31 +1,32 @@
 body{
     max-width: 100% !important;
     overflow-x: hidden !important;
-    margin: 0;
+    margin:0;
     font-family: "Source Sans Pro", sans-serif;
     background-image:url(https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg);
-
+    background-size: auto;
+    width: 100vw;
 }
-
+.contenedorPrincipal{
+    width: 100%;
+}
 .contenedorCartaPrincipal{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-   
+    justify-content: center;   
+    margin: 0 auto;
 }
 
 .cartaPrincipal{
-    height: 40%;
-    width: 50%;
+    height: 90vh;
+    width: 800px;
     background-color:#37404b4f;
     border-radius: 15px;  
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
-}
+} 
 
 .contenedorClave{
     display: flex;
@@ -56,13 +57,64 @@ body{
 .contenedorOpciones{
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
+.contenedorOpcionesUno{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.contenedorOpcionesDos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.contenedorGeneraryResetear {
+    color: #6c7074;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #75c0fd;
+    border-radius: 10px;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+.btnresetear{
+    color: #6c7074;
+    margin-left: 5px;
+  }
+  btnresetear:hover{
+    background-color: #37404b4f;
+}
+
+
+.longitud {
+    color: #6c7074;
+    font-size: 20px;
+    background-color: #75c0fd;
+    border-radius: 5px;
+    height: 27px;
+    width: 250px;
+    border-color: #b3e5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
 h1{
     color: #bdbdbd;
     text-align: center;
     font-size: 35px;    
 }
+
 h2{
     font-size: 18px;
     font-weight: lighter;
@@ -91,46 +143,13 @@ button{
 button:hover{
     background-color: #37404b4f;
 }
-.contenedorGeneraryResetear {
-    color: #6c7074;
-    font-size: 15px;
-    font-family: "Source Sans Pro", sans-serif;
-    background-color: #75c0fd;
-    border-radius: 10px;
-    height: 45px;
-    width: 300px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-  
-  .btnresetear{
-    color: #6c7074;
-    margin-left: 5px;
-  }
-  btnresetear:hover{
-    background-color: #37404b4f;
-}
 
-
-.longitud {
-    color: #6c7074;
-    font-size: 20px;
-    background-color: #75c0fd;
-    border-radius: 5px;
-    height: 27px;
-    width: 250px;
-    border-color: #b3e5fc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
 /* Media query para mobile */
 
 @media (max-width: 480px) {
+    body{
+        height: 400px;
+    }
     .contenedorCartaPrincipal {
       display: flex;
       flex-direction: column;       
@@ -156,6 +175,7 @@ button:hover{
     .inputLongitud{
          font-size: 18px;
     }
+
      
   /* Media query para tablet   */
   @media  (min-width: 481px) and (max-width: 900px) {

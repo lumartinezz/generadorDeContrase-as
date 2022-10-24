@@ -129,10 +129,12 @@ $soloLetras.addEventListener("click", () => {
   $numeros.checked = false; 
 })
 
-$todosCaracteres.addEventListener("click", () => {
+const clickTodos = () => {
   $mayuscula.checked = true; 
   $minuscula.checked = true; 
   $simbolos.checked = true; 
   $numeros.checked = true;
-})
+}
+$todosCaracteres.addEventListener("click", clickTodos)
 
+clickTodos()

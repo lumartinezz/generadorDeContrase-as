@@ -10,7 +10,7 @@
     <title>Generador de Contraseñas</title>
 </head>
 <body>
-  <main>
+  <main class="contenedorPrincipal">
 
     <div class="contenedorCartaPrincipal">
       
@@ -59,31 +59,36 @@
           
           <div class="contenedorOpciones">
 
-            <h2>Reglas para la contraseña</h2>
-                  
-                  <label class="caracteres" >Todos los caracteres</label>
-                  <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" /> 
+            <div class="contenedorOpcionesUno">
 
-                  <label class="soloLetras" for="soloLetras"> Solo letras</label>
-                  <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras"/>
-                
-                  <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
-                  <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros"/> 
-                
-            <h2>Caracteres deseados</h2>
-                  
-                  <label for = "mayuscula">Mayuscula</label>
-                  <input type="checkbox" id= "mayuscula" checked="checked"/>
+              <h2>Reglas para la contraseña</h2>
+                    
+                    <label class="caracteres" >Todos los caracteres</label>
+                    <input class="caracteres" id="todosCaracteres" name="radioReglas" type="radio" checked="checked"/> 
 
-                  <label for = "minuscula">Minuscula</label>
-                  <input type="checkbox" id= "minuscula"/>
+                    <label class="soloLetras" for="soloLetras"> Solo letras</label>
+                    <input class="soloLetras" id="soloLetras" name="radioReglas" type="radio" value="soloLetras"/>
                   
-                  <label for = "numeros">Numeros</label>
-                  <input type="checkbox" id= "numeros"/>
-                  
-                  <label for = "simbolos">Simbolos</label>
-                  <input type="checkbox"  id= "simbolos"/>
-          
+                    <label class="soloNumeros" for="soloNumeros">Solo numeros</label>
+                    <input class="soloNumeros" id="soloNumeros" name="radioReglas" type="radio" value="soloNumeros"/> 
+            </div>
+
+            <div class="contenedorOpcionesDos">
+            
+              <h2>Caracteres deseados</h2>
+                    
+                    <label for = "mayuscula">Mayuscula</label>
+                    <input type="checkbox" id= "mayuscula" checked="checked"/>
+
+                    <label for = "minuscula">Minuscula</label>
+                    <input type="checkbox" id= "minuscula"/>
+                    
+                    <label for = "numeros">Numeros</label>
+                    <input type="checkbox" id= "numeros"/>
+                    
+                    <label for = "simbolos">Simbolos</label>
+                    <input type="checkbox"  id= "simbolos"/>
+            </div>
           </div>
         </section>       
       </div>
