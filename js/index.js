@@ -51,12 +51,20 @@ const generadorPosibleContraseña = () => {
   while (largoRequerido > contraseña.length) {
 
 
-    if (largoRequerido > contraseña.length && $soloLetras.checked) {
+    if (largoRequerido > contraseña.length && $soloLetras.checked && $minuscula.checked && $mayuscula.checked) {
       const num = Math.floor(Math.random() * minus.length);
       const num1 = Math.floor(Math.random() * mayus.length);
       contraseña.push(minus[num]);
-      contraseña.push(minus[num1]);
-    }
+      contraseña.push(mayus[num1]);
+      } else if (largoRequerido > contraseña.length && $soloLetras.checked && $minuscula.checked){
+        const num = Math.floor(Math.random() * minus.length);
+        contraseña.push(minus[num]);
+      } else if (largoRequerido > contraseña.length && $soloLetras.checked && $mayuscula.checked) {
+        const num1 = Math.floor(Math.random() * mayus.length);
+        contraseña.push(mayus[num1]);
+      }
+
+    
 
     if (largoRequerido > contraseña.length && $soloNumeros.checked) {
       const num = Math.floor(Math.random() * nums.length);
