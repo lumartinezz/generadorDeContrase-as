@@ -127,7 +127,11 @@ $soloNumeros.addEventListener("click", () => {
   $mayuscula.checked = false;
   $minuscula.checked = false;
   $simbolos.checked = false;
-  $numeros.checked = true;  
+  $numeros.checked = true;
+  $simbolos.disabled = true; 
+  $minuscula.disabled = true;   
+  $mayuscula.disabled = true;   
+  $numeros.disabled = false;  
 })
 
 $soloLetras.addEventListener("click", () => {
@@ -135,6 +139,11 @@ $soloLetras.addEventListener("click", () => {
   $minuscula.checked = true; 
   $simbolos.checked = false; 
   $numeros.checked = false; 
+  $simbolos.disabled = true; 
+  $numeros.disabled = true; 
+  $minuscula.disabled = false;   
+  $mayuscula.disabled = false;   
+
 })
 
 const clickTodos = () => {
@@ -142,6 +151,11 @@ const clickTodos = () => {
   $minuscula.checked = true; 
   $simbolos.checked = true; 
   $numeros.checked = true;
+  $simbolos.disabled = false; 
+  $minuscula.disabled = false;   
+  $mayuscula.disabled = false;   
+  $numeros.disabled = false;  
+
 }
 $todosCaracteres.addEventListener("click", clickTodos)
 
